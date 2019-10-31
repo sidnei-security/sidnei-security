@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/materialize.min.css">
+        <link rel="stylesheet" href="assets/css/main.min.css">
+        <title>Project</title>
+    </head>
+    <body>
+        <header>
+            <nav id="menu"class="menu">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo" id="logo"></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#about">Sobre nós</a></li>
+                        <li><a href="#store">O que fazemos?</a></li>
+                        <li><a href="#partner">Parcerias</a></li>
+                        <li><a href="#contact">Fale Conosco</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="homepage">
+            <div class="homepage__content">
+                <h1 class="homepage__content__title">Sidnei Security Service</h1>
+                <span class="homepage__content__message"> 
+                    Nosso objetivo é fornecer soluções completas para a segurança da informação e infraestrutura de tecnologia que atendam em absoluto às expectativas de nossos clientes
+                </span>
+            </div>
+            <div id="homepageButton" class="homepage__down-icon"></div>
+        </section>
+        <section id="about" class="about row">
+            <div class="offset-m0 col m12 offset-l1 l10">
+                <h2 class="about__title">Sobre nós</h2>
+                <span class="about__slogan">A nossa excelência é a sua satisfação</span>
+                <p class="about__text">
+                        A SIDNEI SECURITY SERVICE chegou no segmento de Segurança Eletronica para oferecer
+                        serviços com qualidade e pontualidade. Fundada por um profissional com mais de 20 anos de
+                        experiência no ramo de segurança eletrônica, com passagem pelas mais renomadas empresas
+                        do segmento.<br/>
+                        E conta com uma equipe que se preocupa com a sua segurança.  
+                </p>
+            </div>
+        </section>
+        <section id="store" class="store row">
+            <h2 class="store__title">O que fazemos?</h2>
+            <h3 class="store__subtitle" id="access_control">Controle de acesso</h3>
+            <span class="store__message">Em segurança, especialmente segurança física, o termo controle de acesso ou controlo de acesso é uma referência à prática de permitir o acesso a uma propriedade, prédio, ou sala, apenas para pessoas autorizadas. </span>
+            <div class="row">
+                <div class="store__content offset-s1 col s10">
+                    <img src="./assets/img/controle_acesso/1.png" class="store__content__item"/>
+                    <img src="./assets/img/controle_acesso/2.jpg" class="store__content__item"/>
+                    <img src="./assets/img/controle_acesso/intelbras.png" class="store__content__item"/>
+                    <img src="./assets/img/controle_acesso/controlador.jpg" class="store__content__item"/>
+                </div>
+            </div>
+            <h3 class="store__subtitle" id="counter_fire">Alarmes contra incendio</h3>
+            <span class="store__message">O alarme de incêndio é o sistema responsável pela informação de todos os usuários envolvidos em uma determinada área da iminência da ocorrência de um incêndio ou no princípio do mesmo. Normalmente um sistema deste tipo é instalado nas instalações a proteger e não precisa de alterações no futuro.</span>
+            <div class="row">
+                <div class="store__content offset-s1 col s10">
+                    <img src="./assets/img/alarmes/alarmes.png" alt="" class="store__content__item">
+                    <img src="./assets/img/alarmes/central.jpg" alt="" class="store__content__item">
+                    <img src="./assets/img/alarmes/images.jpg" alt="" class="store__content__item">
+                    <img src="./assets/img/alarmes/incendio.png" alt="" class="store__content__item">
+                </div>
+            </div>
+            <h3 class="store__subtitle" id="cftv">CFTV</h3>
+            <span class="store__message">Circuito fechado ou circuito interno de televisão é um sistema de televisão que distribui sinais provenientes de câmeras localizadas em locais específicos, para um ou mais pontos de visualização.</span>
+            <div class="row">
+                <div class="store__content offset-s3 col s6">
+                    <img src="./assets/img/CFTV/vip1.jpg" alt="" class="store__content__item">
+                    <img src="./assets/img/CFTV/vip2.png" alt="" class="store__content__item">
+                </div>
+            </div>
+        </section>
+        <section id="partner" class="partner row">
+            <div class="offset-s1 col s10">
+                <h2 class="partner__title">Parcerias</h2>
+                <span class="partner__message">Acreditamos que parcerias sólidas nos fortalecem, e nos auxiliam na busca incessante pela excelência na qualidade dos serviços prestados.</span>
+                <div class="carousel partner__carousel">
+                    <img class="carousel-item partner__carousel__item" src="assets/img/parcerias/Furukawa.png">
+                    <img class="carousel-item partner__carousel__item" src="assets/img/parcerias/Intelbras.png">
+                    <img class="carousel-item partner__carousel__item" src="assets/img/parcerias/legrand.png">
+                    <img class="carousel-item partner__carousel__item" src="assets/img/parcerias/paradox.png">
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact center-align">
+            <div class="row">
+                <h2 class="contact__title">Fale conosco</h2>
+                <form id="contact" class="contact__form offset-s2 col s8" action="https://formspree.io/xqkzdegg" method="POST">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input name="name" id="first_name" type="text" class="validate">
+                            <label for="first_name">Nome</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input name="_replyto" id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Mensagem</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="contact__form__btn btn waves-effect waves-light" type="submit" name="action">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <div id="up" class="btn-up"></div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/materialize.min.js"></script>
+        <script src="assets/js/main.min.js"></script>
+    </body>
+</html>
