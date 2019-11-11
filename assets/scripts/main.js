@@ -16,12 +16,24 @@
     function scrollToElement(element){
         var target = element.currentTarget || element;
         target.scrollIntoView({
-        })
             behavior: 'smooth'
+        })
     }
-    // Change after
-    $('.carousel').carousel({
-        shift: 50
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        M.Carousel.init(elems, {
+             shift: 50
+         });
+
+         var instance = M.Carousel.getInstance(elems[0]);
+         document.querySelector('#prev').addEventListener('click', function(){
+            instance.prev()
+         })
+         
+         document.querySelector("#next").addEventListener('click', function (){
+             instance.next()
+         })
     });
 
     var $btnUp = document.querySelector("#up");
