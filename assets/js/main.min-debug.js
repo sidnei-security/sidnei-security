@@ -45,13 +45,6 @@
         contact: document.querySelector("#contact")
     }    
 
-    function scrollSections(button){
-        document.querySelector("#" + button).addEventListener("click", () => scrollToElement($sections[button]), false);
-    }
-
-    Object.keys($sections).forEach(function(e){
-        scrollSections(e);
-    });
     $btnHomepage.addEventListener("click", () => scrollToElement($sections.about));
     $btnUp.addEventListener("click", () => scrollToElement(document.querySelector('body')));
     document.addEventListener('scroll', menu);

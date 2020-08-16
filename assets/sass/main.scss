@@ -55,11 +55,16 @@
 
    @media screen and (max-width: 700px){
        &{
-           font-size: 40px;
+           font-size: 45px;
        }
    } 
 }
 
+@media screen and (max-width: 700px) {
+    .about__text { 
+        font-size: 22px;
+   }
+}
 @mixin title-left {
     @include title;
     &:after{
@@ -142,26 +147,51 @@ body{
 
 .about{
     width: 100%;
-    padding: 50px;
-    margin: 15px auto;
-    &__title{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    background-color: #F0F3FA;
+    position: relative;
+    &__image {
+        margin-top: 5vh;
+        height: 80vh;
+    }
+
+
+    &__article {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: -25px;
+    }
+
+    &__title {
         @include title-left;
+        font-size: 85px;
         text-align: left;
+        width: 100%;
+
+        &:after {
+            width: 20%;
+            bottom: 0;
+            height: 2px;
+        }
     }
 
     &__slogan{
         display: block;
         margin: 0;
         font-family: 'Anton';
-        font-size: 32px;
+        font-size: 35px;
         margin-bottom: 12px;
     }
 
     &__text{
-        text-align: justify;
         margin: 2.5px 0;
-        line-height: 24px;
-        font-size: 20px;
+        line-height: 120%;
+        font-size: 26px;
+        font-family: 'Roboto';
+        width: 75%;
     }
 }
 .homepage{
@@ -546,13 +576,25 @@ body{
         background-position: -50px 0;
         background-repeat: no-repeat;
     }
-    section span, section div{
-        font-size: 12px!important;
+    section span, section div, p {
+        font-size: 16px!important;
+
+        &.about{
+            &__slogan {
+                font-size: 24px!important;
+            }
+
+            &__text {
+                width: 95%;
+                text-align: justify;
+            }
+        }
     }
 
     section h3{
         font-size: 25px!important;
     }
+
 }
 
 
@@ -597,4 +639,32 @@ body{
     margin: 0 auto;
     top: 50%;
     margin-top: 50px;
+}
+
+.ball {
+    &-top-right {
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    &-bottom-right {
+        bottom: 0%;
+        right: 0;
+        position: absolute;
+    }
+
+    &-bottom-40-left {
+        bottom: 0;
+        left: 30%;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .store__message {
+        margin-left: 20px!important;
+        margin-right: 20px!important;
+    }
 }
