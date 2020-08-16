@@ -38,6 +38,8 @@
 
     var $btnUp = document.querySelector("#up");
     var $btnHomepage = document.querySelector("#homepageButton");
+    var $logo = document.querySelector("#logo");
+
     var $sections = {
         about: document.querySelector("#about"),
         partner: document.querySelector("#partner"),
@@ -45,7 +47,9 @@
         contact: document.querySelector("#contact")
     }    
 
+
     $btnHomepage.addEventListener("click", () => scrollToElement($sections.about));
+    $logo.addEventListener("click", () => scrollToElement(document.querySelector('body')));
     $btnUp.addEventListener("click", () => scrollToElement(document.querySelector('body')));
     document.addEventListener('scroll', menu);
 })();
