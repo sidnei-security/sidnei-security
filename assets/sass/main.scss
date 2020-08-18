@@ -129,20 +129,23 @@ body{
         height: 50px!important;
 
         & #logo{
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
+            left: 10px;
         }
     }   
 }
 #logo{
-    background-image: url('../img/logo.png');
-    background-size: cover;
+    background-image: url(../img/logo.png);
+    background-size: contain;
     transform: translateY(-25px);
-    width: 200px;
-    height: 200px;
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 125px;
     position: absolute;
-    left: 0;
-    transition: 0.3s all;
+    left: 50px;
+    top: 30px;
+    transition: .3s all;
 }
 
 .about{
@@ -573,9 +576,10 @@ body{
 @media screen and (max-width: 550px) {
 
     #logo{
-        background-position: -50px 0;
+        left: 15px;
         background-repeat: no-repeat;
     }
+
     section span, section div, p {
         font-size: 16px!important;
 
